@@ -1,0 +1,17 @@
+@import './colors';
+@import './nav';
+@import './separator';
+@import './swiper';
+@import './whoWeAre';
+@import './whatWeDo';
+@import './footer';
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text;
+}
+
+body {
+  background-color: $bodyBackground;
+  margin: 0;
+}

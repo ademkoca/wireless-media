@@ -1,0 +1,16 @@
+@mixin hover-home {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(42%) saturate(3472%)
+    hue-rotate(5deg) brightness(100%) contrast(64%);
+}
+@mixin hover-about {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(22%) saturate(689%)
+    hue-rotate(59deg) brightness(98%) contrast(85%);
+}
+@mixin hover-ourWork {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(16%) saturate(1171%)
+    hue-rotate(138deg) brightness(92%) contrast(91%);
+}
+@mixin hover-contact {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(87%) saturate(806%)
+    hue-rotate(171deg) brightness(87%) contrast(95%);
+}

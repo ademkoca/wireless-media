@@ -1,0 +1,88 @@
+@import './colors';
+@import './mixins';
+
+.whatWeDo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 27px;
+    color: $text;
+  }
+
+  .boxes {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .box {
+        width: 168px;
+        height: 101px;
+        padding: 20px 40px;
+        background-color: $lightgrey;
+        margin: 0 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        object {
+          width: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.iconCalc:hover,
+.iconCalc:active,
+.iconCalc:focus,
+.iconCalc:visited,
+.iconClock:hover,
+.iconClock:active,
+.iconClock:focus,
+.iconClock:visited,
+.iconCloud:hover,
+.iconCloud:active,
+.iconCloud:focus,
+.iconCloud:visited,
+.iconHeart:hover,
+.iconHeart:active,
+.iconHeart:focus,
+.iconHeart:visited {
+  @include hover-home;
+}
+
+@media screen and (min-width: 480px) {
+  .whatWeDo {
+    max-width: 416px;
+    margin: 0 auto;
+    h2 {
+      align-self: flex-start;
+      margin-left: 20px;
+    }
+
+    .boxes {
+      flex-direction: row;
+      width: 416px !important;
+      justify-content: space-evenly;
+
+      .row {
+        flex: 1;
+
+        .box {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+  }
+}
